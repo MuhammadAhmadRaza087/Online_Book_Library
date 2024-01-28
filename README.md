@@ -49,13 +49,9 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 - **[Lendio](https://lendio.com)**
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+To ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
@@ -124,7 +120,76 @@ The Online Bookstore Management System is a web application built using the Lara
 
 ### Installation
 
-1. Clone the repository.
-2. Set up the database by running migrations: `php artisan migrate`.
-3. Serve the application: `php artisan serve`.
-4. Access the application in your browser: `http://localhost:8000`.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/MuhammadAhmadRaza087/Online_Book_Library.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Online_Book_Library
+   ```
+
+3. Install PHP dependencies:
+
+   ```bash
+   composer install
+   ```
+
+4. Install frontend dependencies:
+
+   ```bash
+   npm install && npm run dev
+   ```
+
+5. Copy the `.env.example` file to `.env` and configure your database connection.
+
+6. Generate the application key:
+
+   ```bash
+   php artisan key:generate
+   ```
+
+7. Run database migrations:
+
+   ```bash
+   php artisan migrate
+   ```
+
+8. Serve the application:
+
+   ```bash
+   php artisan serve
+   ```
+
+The application should now be running at [http://localhost:8000](http://localhost:8000).
+
+## Usage
+
+- Access the application in your web browser.
+- Navigate through the available routes such as `/`, `/about`, `/contact`, `/shop`, and `/admin`.
+- Perform actions like adding books, managing customers, and more through the provided interfaces.
+
+## Folder Structure
+
+The project follows the standard Laravel folder structure. Key folders include:
+
+- `app`: Contains the application's models, controllers, and other PHP classes.
+- `database`: Contains database migrations and seeds.
+- `resources`: Contains frontend assets, views, and components.
+- `routes`: Contains the route definitions.
+- `tests`: Contains PHPUnit test cases.
+
+## Database Migrations
+
+The database migrations create tables such as `users`, `password_reset_tokens`, `failed_jobs`, `personal_access_tokens`, `customer`, `book`, `admin`, and `cart`. These tables store information related to users, books, customers, and administrative tasks.
+
+## Contributing
+
+Feel free to contribute to the development of this project. You can submit issues for bug reports, feature requests, or create pull requests with enhancements.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE). You can freely use and modify the code for your own purposes. If you find it helpful, contributions are always appreciated.
